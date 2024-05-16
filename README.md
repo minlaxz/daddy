@@ -42,6 +42,7 @@ And spin it up, `docker compose up -d`
 
 Application container
 ```sh
+#whoami.yml
 services:
     whoami:
       image: traefik/whoami
@@ -54,6 +55,8 @@ networks:
     name: caddy-net
     external: true
 ```
+Start the application container `docker compose -f whoami.yml up -d` <br>
+Or maybe wanna test Caddy's load balancing? `docker compose -f whoami.yml up -d --scale whoami=2`
 
 ### Using Cloudflare
 Application container

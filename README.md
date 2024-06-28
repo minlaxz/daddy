@@ -1,8 +1,11 @@
 # daddy
-_It's usually very difficult for me to name something._
+_It's usually challenging for me to name something._
 
-I have a lot of services running in containers on servers and I was previously using 
-
-[nginx-proxy/nginx-proxy](https://github.com/nginx-proxy/nginx-proxy) for those but lately found that `daddy` is more suited for me.
+`daddy` is `caddy` in `docker` container; this name is easy for me to remember. 😆
 
 `daddy` has a wiki, please go [there](https://github.com/minlaxz/daddy/wiki) for more information.
+
+daddy can
+
+- reverse proxy (other containers or compose services)
+- forward proxy (example: running `hysteria2` behind the `daddy`)
